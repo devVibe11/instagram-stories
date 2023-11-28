@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    
+}
+body{
+    background-color: rgb(13, 239, 251);
+}
+#page{
+    height: 550px;
+    width: 360px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 6px;
+    position: relative;
+    background-color: rgb(248, 250, 249);
+    overflow: hidden;
+   
+}
+#card{
+    height:95px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    white-space: nowrap;
+    overflow-x: auto;
+   overflow-y:hidden;
+}
+
+/* removing the default scrollbar */
+#card::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    margin: 1px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 3px solid red;
+    display: inline-block;
+    overflow: hidden;
+    
+}
+.story img{
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+}
+#full-screen{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none;
+}
